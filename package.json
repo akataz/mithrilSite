@@ -1,0 +1,12 @@
+{
+  "name": "mithrilSite",
+  "version": "1.0.0",
+  "description": "Professional Website of Tyrus Brenc, Software Engineer",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/akataz/mithrilSite.git",
+    "type": "git"
+  },
+  "author": "akataz <tyrus.brenc@gmail.com>",
+  "license": "MIT"
+}
