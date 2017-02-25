@@ -5,7 +5,7 @@ var Blog = {
     loadList: function() {
       return m.request({
         method: "GET",
-        url: "/blog"
+        url: "/api/blog"
       })
       .then(function(result) {
           Blog.list = result.data;
