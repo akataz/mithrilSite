@@ -1,0 +1,36 @@
+<body>
+    <script src="//unpkg.com/mithril/mithril.js"></script>
+    <script>
+    var root = document.body
+
+    //m.render(root, m("h1",{class: "title"}, "Hello World!"));
+    //home should be renamed to splash, and should have projects, blogposts, about me, contact, recipes, and protected jobs links
+    //as well as maybe some tiles or something of highlights, or better yet straight to the projects
+    
+    var Home = {
+      view: function() {
+          return m("a", {href: "#!/blog"}, "Enter!")
+      }
+    }
+    var count = 0 // added a variable
+
+    var Blog = {
+        view: function() {
+            return m("main", [
+                m("h1", {class: "title"}, "My first app"),
+                // changed the next line
+                m("button", {onclick: function() {count++}}, count + " clicks"),
+            ])
+        }
+    }
+
+    m.route(root, "/home", {
+        "/home": Home,
+        "/blog": Blog,
+    })
+    // your code goes here!
+    </script>
+</body>
+<!-- //click a button that hides the recipe on the recipe blog, citing reasons of
+//hating to read the life story of bloggers just to score some cool recipes -->
++
